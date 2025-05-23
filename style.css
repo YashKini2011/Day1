@@ -1,0 +1,146 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    background-color: #f0f4ff;
+    color: #1a237e;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  header {
+    background: linear-gradient(90deg, #64b5f6, #3f51b5);
+    color: white;
+    padding: 2em 1em;
+    text-align: center;
+    position: relative;
+  }
+  
+  #darkModeToggle {
+    position: absolute;
+    top: 1em;
+    right: 1em;
+    padding: 0.5em 1em;
+    border: none;
+    background: #ffffff33;
+    color: white;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+  
+  nav {
+    background: white;
+    text-align: center;
+    padding: 1em 0;
+    position: sticky;
+    top: 0;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    z-index: 10;
+  }
+  
+  nav a {
+    margin: 0 1.2em;
+    text-decoration: none;
+    color: #3f51b5;
+    font-weight: 600;
+    transition: color 0.3s;
+  }
+  
+  nav a:hover {
+    color: #1a237e;
+  }
+  
+  section {
+    padding: 2em;
+    max-width: 900px;
+    margin: 2em auto;
+    background: white;
+    border-radius: 16px;
+    box-shadow: 0 6px 16px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+  }
+  
+  section:hover {
+    transform: scale(1.01);
+  }
+  
+  h2 {
+    color: #3f51b5;
+    text-align: center;
+    margin-bottom: 1em;
+  }
+  
+  img.profile-pic {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    object-fit: cover;
+    display: block;
+    margin: 0 auto 1.5em auto;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  }
+  
+  ul {
+    padding-left: 1.5em;
+  }
+  
+  li {
+    margin-bottom: 0.8em;
+  }
+  
+  footer {
+    background: linear-gradient(90deg, #64b5f6, #3f51b5);
+    color: white;
+    padding: 2em 0;
+    text-align: center;
+    margin-top: 3em;
+  }
+  
+  footer a {
+    color: #bbdefb;
+  }
+  
+  footer a:hover {
+    color: #e3f2fd;
+  }
+  
+  /* Dark mode styles */
+  body.dark-mode {
+    background-color: #121212;
+    color: #eeeeee;
+  }
+  
+  body.dark-mode section {
+    background-color: #1e1e1e;
+  }
+  
+  body.dark-mode nav {
+    background-color: #2c2c2c;
+  }
+  
+  body.dark-mode nav a {
+    color: #bbdefb;
+  }
+  
+  /* Reveal animation */
+  .reveal {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+  }
+  
+  .reveal.active {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  @media (max-width: 600px) {
+    nav a {
+      display: block;
+      margin: 0.5em 0;
+    }
+  
+    section {
+      margin: 1em;
+    }
+  }
+  
